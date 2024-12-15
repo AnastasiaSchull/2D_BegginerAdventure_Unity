@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\assets\\scripts\\crystal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\crystal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|c:\\users\\anastasia\\2d_beginneradventure_unity\\assets\\scripts\\banditmover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\banditmover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\assets\\scripts\\heart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\heart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\coin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|c:\\users\\anastasia\\2d_beginneradventure_unity\\assets\\scripts\\enemymover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemymover.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|c:\\users\\anastasia\\2d_beginneradventure_unity\\assets\\scripts\\platform2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\platform2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|c:\\users\\anastasia\\2d_beginneradventure_unity\\assets\\scripts\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\Platform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\assets\\scripts\\collectiblehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{191FE91C-72F1-E578-4DDB-825E7D37C1AB}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\collectiblehandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +38,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 17,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -82,71 +90,93 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Platform2.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Platform2.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Platform2.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Platform2.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Platform2.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T07:13:58.772Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "EnemyMover.cs",
               "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\EnemyMover.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\EnemyMover.cs",
               "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\EnemyMover.cs",
               "RelativeToolTip": "Assets\\Scripts\\EnemyMover.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-13T07:13:31.797Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Platform.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Platform.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Platform.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Platform.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Platform.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAwBcAAAAsAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T17:47:10.348Z",
+              "WhenOpened": "2024-12-15T17:27:11.839Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Platform.cs",
-              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Platform.cs",
-              "RelativeDocumentMoniker": "Assets\\Platform.cs",
-              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Platform.cs",
-              "RelativeToolTip": "Assets\\Platform.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "BanditMover.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\BanditMover.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\BanditMover.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\BanditMover.cs",
+              "RelativeToolTip": "Assets\\Scripts\\BanditMover.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-12T17:46:40.626Z"
+              "WhenOpened": "2024-12-15T15:43:14.397Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Crystal.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Crystal.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Crystal.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Crystal.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Crystal.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T15:05:35.912Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Heart.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Heart.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Heart.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Heart.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Heart.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T15:01:00.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "Player.cs",
               "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Player.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player.cs",
               "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Player.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAgwFEAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAKUAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-11T22:49:17.217Z",
+              "WhenOpened": "2024-12-15T14:43:42.496Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Coin.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Coin.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Coin.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\Coin.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Coin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:30:54.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CollectibleHandler.cs",
+              "DocumentMoniker": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\CollectibleHandler.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\CollectibleHandler.cs",
+              "ToolTip": "C:\\Users\\Anastasia\\2D_BeginnerAdventure_Unity\\Assets\\Scripts\\CollectibleHandler.cs",
+              "RelativeToolTip": "Assets\\Scripts\\CollectibleHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-15T14:12:26.542Z"
             }
           ]
         },

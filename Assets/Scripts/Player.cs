@@ -20,8 +20,15 @@ public class Player : MonoBehaviour
 
     private float move;
     private bool isGrounded; //чтоб запретить подпрыгивать , если в воздухе
-    private bool isRunning; 
+    private bool isRunning;
 
+
+    private int coins = 0;
+    private int hearts = 3; // кол-во жизней
+    private int crystals = 0;
+
+    // max кол-во жизней
+    private int maxHearts = 10;
     void Start()
     {
        
@@ -52,6 +59,7 @@ public class Player : MonoBehaviour
     {
         rb.velocity = new Vector2(speed*move, rb.velocity.y);//speed это по оси X , а  rb.velocity.y - это V по умолчанию, если поставить 0 , то это мы принудительно останавливаем
 
+#region Flip Logic Experiments 
         // рабочий поворот персонажа. Крош-персонаж без анимации
         //if (rb.velocity.x > 0) // eсли движение ->
         //{
@@ -72,6 +80,7 @@ public class Player : MonoBehaviour
         //{
         //    transform.localScale = new Vector3(transform.localScale.x * -1, transform.localScale.y, transform.localScale.z);
         //}
+        #endregion
 
         // смена направления Мага
         //Mathf.Abs (аbsolute) возвращает модуль числа
@@ -91,14 +100,16 @@ public class Player : MonoBehaviour
         animator.SetBool("isGrounded", isGrounded);
     }
 
+#region Collision Events
     //1 способ. сработает, когда коллайдер персонажа столкнется с другим коллайдером
     //OnCollisionExit2D сработает когда разъединятся 2 коллайдера
     //OnCollisionStay2D - будет срабатывать каждый игровой кадр, пока коллайдеры соприкосаются
-    
+
     /*private void OnCollisionEnter2D(Collision2D collision)
     {
         isGrounded = true;
     }*/
+    #endregion
 
     private void OnDrawGizmos()//этот метод действует в инспекторе, не в игре
     {
@@ -114,4 +125,46 @@ public class Player : MonoBehaviour
             collideble.Collide(this);
         }
     }
+
+#region Coin, Heart, and Crystal Methods
+    public void AddCoins(int amount)
+    {
+        coins += amount;
+        Debug.Log("Coins: " + coins);
+    }
+
+    public void AddHearts(int amount)
+    {
+        if (hearts < maxHearts) // проверим чтоб не было переполнено
+        {
+            hearts += amount;
+            if (hearts > maxHearts)
+                hearts = maxHearts;
+
+            Debug.Log("Hearts: " + hearts);
+        }
+        else
+        {
+            Debug.Log("Hearts are full!");
+        }
+    }
+
+    public void AddCrystals(int amount)
+    {
+        crystals += amount;
+        Debug.Log("Crystals: " + crystals);
+    }
+
+    public void ReduceHearts(int damage)
+    {
+        hearts -= damage;
+
+        if (hearts <= 0)
+        {
+            hearts = 0;
+        }
+        Debug.Log($"Player hearts remaining: {hearts}");
+    }
+
+    #endregion 
 }

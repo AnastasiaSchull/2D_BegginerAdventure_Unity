@@ -17,6 +17,7 @@ public class Heart : MonoBehaviour, ICollideble
     {
        // Destroy(gameObject); //так мы удалтм сердце при взаимодействии с героем
        renderer.color = Color.cyan;//меняется цвет при взаимодействии с героем
+        player.AddHearts(1); // ++1 жизнь 
     }
 
     private void OnTriggerEnter2D(Collider2D collider)

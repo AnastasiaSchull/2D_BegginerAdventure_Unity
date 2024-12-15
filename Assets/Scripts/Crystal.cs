@@ -8,9 +8,9 @@ public class Crystal : MonoBehaviour, ICollideble
     [SerializeField] private float speedIncrease = 4.0f; // на столько будет < скорость
     [SerializeField] private Heart heart;
 
-
     public void Collide(Player player)
     {
+        player.AddCrystals(1);
         Destroy(gameObject);
     }
 

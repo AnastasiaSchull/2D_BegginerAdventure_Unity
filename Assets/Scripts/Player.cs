@@ -1,10 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Player : MonoBehaviour     
 {
-    // Start is called before the first frame update
+    public event Action<float> onCoinsChanged; 
+    
     [SerializeField] private Rigidbody2D rb;//несмотря на то, что поле приватное , благодаря [SerializeField] , мы в инспекторе сможем настроить его
     [SerializeField] private Collider2D Collider2D;
 
@@ -29,6 +31,8 @@ public class Player : MonoBehaviour
 
     // max кол-во жизней
     private int maxHearts = 10;
+
+    // Start is called before the first frame update
     void Start()
     {
        
@@ -131,6 +135,7 @@ public class Player : MonoBehaviour
     {
         coins += amount;
         Debug.Log("Coins: " + coins);
+        onCoinsChanged.Invoke(coins);
     }
 
     public void AddHearts(int amount)

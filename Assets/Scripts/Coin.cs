@@ -6,7 +6,7 @@ public class Coin : MonoBehaviour, ICollideble
 {
     public void Collide(Player player)
     {
-        player.AddCoins(1); // ++ 1 монетку 
+        player.AddCoins(5); // ++ 1 монетку или 5)
         Destroy(gameObject);//-- монетку
     }
 }

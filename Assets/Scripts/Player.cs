@@ -15,6 +15,7 @@ public class Player : MonoBehaviour
     [SerializeField] private LayerMask groundMask;
 
     [SerializeField] Animator animator;
+    public Inventory inventory;
 
     public float speed;//публичные отображаются в инспекторе
     public KeyCode jumpKey;//клавиша прыжка

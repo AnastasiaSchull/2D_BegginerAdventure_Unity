@@ -8,9 +8,11 @@ public class BanditMover : MonoBehaviour
     public Transform player;
     public float attackRange; // радиус атаки
     public float closeRange;  // радиус ближнейатаки
+    public float health = 100f; // здоровье бандита
 
     private bool isAttacking = false;
     private bool isClose = false;
+    private bool isDead = false;
 
     [SerializeField] private new Collider2D collider2D;
     [SerializeField] private int attackDamage = 1;
@@ -18,6 +20,7 @@ public class BanditMover : MonoBehaviour
     [SerializeField] private AudioSource audioSource; // компонент, который проигрывает аудио файлы,  а AudioClip(в инспекторе) — это файл со звуком
     [SerializeField] private AudioClip swordAttackSound; // сам звук меча
 
+    [SerializeField] private AudioClip bulletHitSound; 
 
     private void Start()
     {
@@ -25,6 +28,7 @@ public class BanditMover : MonoBehaviour
     }
     private void Update()
     {
+        if (isDead) return;
         // считаем расстояние до игрока
         //float distanceToPlayer = Vector2.Distance(transform.position, player.position);
 
@@ -108,4 +112,39 @@ public class BanditMover : MonoBehaviour
             }
         }
     }
+
+    public void TakeDamage(float damage)
+    {
+        damage= 25f;    
+        if (isDead) return; 
+
+        health -= damage; 
+        Debug.Log($"Bandit takes {damage} damage, health: {health}");
+
+        if (bulletHitSound != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(bulletHitSound);
+        }
+        // анимация урона
+        animator.SetTrigger("Hurt");
+
+        if (health <= 0)
+        {
+            Die();
+        }
+    }
+
+    private void Die()
+    {
+        isDead = true; 
+
+        animator.SetTrigger("Death"); 
+
+        //чтобы бандит больше не реагировал на столкновения
+        collider2D.enabled = false;
+
+        // уничтожаем  через 2 с
+        Destroy(gameObject, 2f);
+    }
+
 }

@@ -5,28 +5,28 @@ using UnityEngine;
 public class Heart : MonoBehaviour, ICollideble
 {
     private new SpriteRenderer renderer;
-
-    [SerializeField] private EnemyMover enemyMover; 
-    [SerializeField] private float speedIncrease = 4.0f; // на столько будет > скорость
+  
+    private Collider2D collider;
 
     void Start()
     {
         renderer = GetComponent<SpriteRenderer>();
+        collider = GetComponent<Collider2D>(); 
     }
     public void Collide(Player player)
     {
-       // Destroy(gameObject); //так мы удалтм сердце при взаимодействии с героем
-       renderer.color = Color.cyan;//меняется цвет при взаимодействии с героем
-        player.AddHearts(1); // ++1 жизнь 
-    }
-
-    private void OnTriggerEnter2D(Collider2D collider)
-    {
-        if (collider.TryGetComponent(out Player player))
+        if (renderer.color == Color.cyan)
         {
-            enemyMover.speed += speedIncrease; // ++ скорость врага
-            Debug.Log($"speed increased : {enemyMover.speed}");         
+
+        }
+        else
+        {
+            // Destroy(gameObject); //так мы удалтм сердце при взаимодействии с героем
+            renderer.color = Color.cyan;//меняется цвет при взаимодействии с героем
+            player.AddHearts(1); // ++1 жизнь 
+            collider.enabled = false;// откл коллайдер, чтоб не реагировать на столкновения
         }
     }
+
 }
 

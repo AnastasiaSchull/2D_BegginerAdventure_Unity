@@ -19,10 +19,22 @@ public class CollectibleHandler : MonoBehaviour
         // проверка на  тег Collectible
         if (other.CompareTag("Collectible"))
         {
-            //звук 
-            audioSource.PlayOneShot(collectSound);
-            // Destroy(other.gameObject);
+            // проверяем, есть ли у объекта ItemObject
+            ItemObject itemObject = other.GetComponent<ItemObject>();
+            if (itemObject != null && itemObject.item.collectSound != null)
+            {
+                //звук из ItemObject
+                audioSource.PlayOneShot(itemObject.item.collectSound);
+                Debug.Log($"Collected item: {itemObject.item.Name}");
+                Destroy(other.gameObject); 
+            }
+
+            else
+            {
+                //не для айтемобьектов
+                audioSource.PlayOneShot(collectSound);
+                // Destroy(other.gameObject);
+            }
         }
     }
 }
-

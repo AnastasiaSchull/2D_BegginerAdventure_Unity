@@ -17,3 +17,4 @@ MonoBehaviour:
   Sprite: {fileID: 21300000, guid: d7a9d847a9c81ed488de318b60d1ab73, type: 3}
   Price: 50
   rarity: 1
+  collectSound: {fileID: 8300000, guid: 8c3f36e597c825142b231e5449aa3e27, type: 3}

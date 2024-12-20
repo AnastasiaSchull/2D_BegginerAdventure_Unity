@@ -1,4 +1,4 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,7 +10,7 @@ public class Item : ScriptableObject
     public Sprite Sprite;
     public float Price;
     public Rarity rarity;
-
+    public AudioClip collectSound; // звук для предмета
 
     public enum Rarity
     {

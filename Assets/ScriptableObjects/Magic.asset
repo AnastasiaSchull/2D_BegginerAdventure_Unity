@@ -18,3 +18,4 @@ MonoBehaviour:
   Price: 25
   rarity: 0
   collectSound: {fileID: 8300000, guid: 437577a39d586ef4299a834da5db3ce9, type: 3}
+  healthValue: 3

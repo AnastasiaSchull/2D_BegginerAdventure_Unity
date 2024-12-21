@@ -21,6 +21,10 @@ public class Player : MonoBehaviour
     public KeyCode jumpKey;//клавиша прыжка
     public float jumpForce;//сила прыжка
 
+    public int CurrentHearts => hearts; 
+    public int MaxHearts => maxHearts; 
+
+
     private float move;
     private bool isGrounded; //чтоб запретить подпрыгивать , если в воздухе
     private bool isRunning;
@@ -141,13 +145,16 @@ public class Player : MonoBehaviour
 
     public void AddHearts(int amount)
     {
-        if (hearts < maxHearts) // проверим чтоб не было переполнено
+        if (hearts < maxHearts) // проверим, чтоб не было переполнено
         {
             hearts += amount;
             if (hearts > maxHearts)
                 hearts = maxHearts;
 
             Debug.Log("Hearts: " + hearts);
+
+            // обновляем слайдер
+            FindObjectOfType<HealthSlider>().UpdateHealthUI(hearts);
         }
         else
         {
@@ -158,6 +165,10 @@ public class Player : MonoBehaviour
     public void AddCrystals(int amount)
     {
         crystals += amount;
+
+        int coinsFromCrystals = amount * 50; // конвертируем кристаллы в монеты
+        AddCoins(coinsFromCrystals); // и добавляем их
+
         Debug.Log("Crystals: " + crystals);
     }
 
@@ -169,6 +180,8 @@ public class Player : MonoBehaviour
         {
             hearts = 0;
         }
+        
+        FindObjectOfType<HealthSlider>().UpdateHealthUI(hearts);
         Debug.Log($"Player hearts remaining: {hearts}");
     }
 

@@ -11,7 +11,7 @@ public class Item : ScriptableObject
     public float Price;
     public Rarity rarity;
     public AudioClip collectSound; // звук для предмета
-
+    public int healthValue; // кол-во жизней, которое добавляет герою
     public enum Rarity
     {
         Common,

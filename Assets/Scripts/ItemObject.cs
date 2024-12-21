@@ -8,6 +8,21 @@ public class ItemObject : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
+        Debug.Log($"Collision detected with: {other.name}");
+
+        Debug.Log("Player tag detected");
+        
+        //if (item.collectSound != null)
+        //{
+        //    AudioSource.PlayClipAtPoint(item.collectSound, transform.position);
+        //    Debug.Log("Sound played");
+        if (item.healthValue == 3)
+        {
+            Player player = other.GetComponent<Player>();
+
+            Debug.Log($"Adding {item.healthValue} hearts to player.");
+            player.AddHearts(item.healthValue);
+        }
         // проверка на тег 
         if (other.CompareTag("Player"))
         {
@@ -18,5 +33,4 @@ public class ItemObject : MonoBehaviour
             }
         }
     }
-
 }
